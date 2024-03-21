@@ -22,4 +22,8 @@ processor.run(new TypeormDatabase({supportHotBlocks: true}), async (ctx) => {
 
         }
     }
+
+
+    await entityCache.persistCacheToDatabase(false);
+
 });
