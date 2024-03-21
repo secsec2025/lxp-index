@@ -1,0 +1,12 @@
+type Account @entity {
+  id: ID!
+  balance: BigInt!
+}
+
+type Stat @entity {
+  id: ID!
+  tokenName: String!
+  tokenSymbol: String!
+  decimals: BigInt!
+  totalSupply: BigInt!
+}
